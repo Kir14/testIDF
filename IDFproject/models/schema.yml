@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: idf  # Name of the source
+    database: idf  # ClickHouse database name
+    schema: idf  # ClickHouse schema name (same as database for ClickHouse)
+    tables:
+      - name: PARSED_TABLE  # Name of the table in ClickHouse

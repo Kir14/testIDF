@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  clickhouse-server:
+    image: clickhouse/clickhouse-server:latest
+    container_name: clickhouse-server
+    ports:
+      - "8123:8123"  # HTTP interface
+      - "9000:9000"  # Native TCP protocol
+      - "9009:9009"  # Interserver communication
+    volumes:
+      - /home/kirill/Documents/IDF/clickhouse:/var/lib/clickhouse
+      - /home/kirill/Documents/IDF/init.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      - CLICKHOUSE_DB=idf
+      - CLICKHOUSE_USER=userIDF
+      - CLICKHOUSE_PASSWORD=passIDF

@@ -1,0 +1,61 @@
+[0m22:13:04.815972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf98668a120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf984297860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf986372360>]}
+
+
+============================== 22:13:04.891836 | 914c05d1-3c8d-4886-9c5d-de9b26343545 ==============================
+[0m22:13:04.891836 [info ] [MainThread]: Running with dbt=1.8.9
+[0m22:13:04.892789 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/kirill/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init IDFproject', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:13:04.988007 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'PosixPath'.. Dictionary: {'dir': PosixPath('/home/kirill/.dbt')}
+[0m22:13:04.989995 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m22:13:04.994051 [debug] [MainThread]: Starter project path: /home/kirill/Documents/IDF/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m22:13:05.022728 [info ] [MainThread]: 
+Your new dbt project "IDFproject" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:13:05.025841 [info ] [MainThread]: Setting up your profile.
+[0m22:13:31.544756 [info ] [MainThread]: No sample profile found for clickhouse.
+[0m22:13:31.558146 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 26.788044, "process_in_blocks": "31348", "process_kernel_time": 0.239204, "process_mem_max_rss": "87520", "process_out_blocks": "64", "process_user_time": 2.016297}
+[0m22:13:31.560089 [debug] [MainThread]: Command `dbt init` succeeded at 22:13:31.559669 after 26.79 seconds
+[0m22:13:31.561878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf983de8170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf983bdf3e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf983d68bf0>]}
+[0m22:13:31.563666 [debug] [MainThread]: Flushing usage events
+[0m22:26:02.066474 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79b0e3a3ba70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79b0e315ed80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79b0e315e6c0>]}
+
+
+============================== 22:26:02.070017 | 7baf7f18-5822-4a2e-b36e-427be607613d ==============================
+[0m22:26:02.070017 [info ] [MainThread]: Running with dbt=1.8.9
+[0m22:26:02.070730 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': '/home/kirill/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:26:02.071424 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/kirill/Documents/IDF/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:26:02.072556 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.05918303, "process_in_blocks": "7928", "process_kernel_time": 0.128645, "process_mem_max_rss": "86952", "process_out_blocks": "24", "process_user_time": 1.488897}
+[0m22:26:02.073136 [debug] [MainThread]: Command `dbt run` failed at 22:26:02.073017 after 0.06 seconds
+[0m22:26:02.073580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79b0e35f25a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79b0e3a3ba70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79b0e32cf0b0>]}
+[0m22:26:02.074093 [debug] [MainThread]: Flushing usage events
+[0m22:27:34.284980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7827190825a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x782718ee9130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x782719a4c5c0>]}
+
+
+============================== 22:27:34.288172 | d93a7b4b-84c5-47f2-b478-20d9561a896c ==============================
+[0m22:27:34.288172 [info ] [MainThread]: Running with dbt=1.8.9
+[0m22:27:34.288928 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/home/kirill/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:27:34.289619 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/kirill/Documents/IDF/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:27:34.290643 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.050951704, "process_in_blocks": "32", "process_kernel_time": 0.10693, "process_mem_max_rss": "87200", "process_out_blocks": "8", "process_user_time": 1.35112}
+[0m22:27:34.291245 [debug] [MainThread]: Command `dbt run` failed at 22:27:34.291104 after 0.05 seconds
+[0m22:27:34.291698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x782718e37e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x782718ee9130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7827193785f0>]}
+[0m22:27:34.292226 [debug] [MainThread]: Flushing usage events

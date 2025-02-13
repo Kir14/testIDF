@@ -1,0 +1,11 @@
+IDFproject:
+  target: dev
+  outputs:
+    dev:
+      type: clickhouse
+      schema: idf
+      host: localhost
+      user: userIDF
+      password: passIDF
+      port: 8123
+      database: idf
